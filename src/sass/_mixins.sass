@@ -1,0 +1,19 @@
+@mixin borderStyle()
+	border: 1px
+	border-style: solid
+	border-color: black
+
+@mixin headingSetting($fontSizeVal: 70px, $marginTopVal: 10px, $marginBottomVal: 10px)
+	font-size: $fontSizeVal
+	margin-top: $marginTopVal
+	margin-bottom: $marginBottomVal
+
+@mixin buttonSetting($fontColor, $borderWeight, $bg, $bs, $bc, $br: 5px, $width: 115px, $height: 40px)
+	color: $fontColor
+	width: $width
+	height: $height
+	background-color: $bg
+	border: $borderWeight
+	border-style: $bs
+	border-color: $bc
+	border-radius: $br

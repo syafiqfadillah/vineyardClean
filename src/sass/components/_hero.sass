@@ -1,0 +1,58 @@
+#jumbotron
+	font-family: Calibri
+	display: flex
+
+	.hero
+		width: 800px
+		margin: 40px
+		margin-left: 100px
+		// @include borderStyle
+
+		h1
+			@include headingSetting
+
+		h2
+			@include headingSetting(70px, -30px, 40px)
+			color: #5a4dcc
+
+		h4
+			@include headingSetting(21px, 40px, 10px)
+
+		.outline
+			@include buttonSetting(#948eb2, 2px, white, solid, #948eb2)
+			margin-right: 10px
+
+		.primary
+			@include buttonSetting(white, 0, #5a4dcc, solid, #5a4dcc)
+
+	.about
+		margin: 40px
+		margin-right: 100px
+		// @include borderStyle
+
+		.about-heading
+			font-size: 35px
+
+		.about-paragraph
+		
+			.about-primary
+				color: #5a4dcc
+				font-weight: bold
+
+		.primary
+			@include buttonSetting(white, 0, #5a4dcc, solid, #5a4dcc, 5px, 170px, 50px)
+
+		.about-detail
+			li 
+				display: inline-block
+				margin-top: -35px
+				margin-left: 110px
+				margin-right: 30px
+
+				h4
+					color: #5a4dcc
+					font-size: 60px
+					margin-bottom: 0px
+
+				span
+					margin-left: 13px
