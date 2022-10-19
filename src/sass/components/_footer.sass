@@ -1,0 +1,85 @@
+.footer
+  align-items: center
+  display: flex
+  flex-direction: column
+  width: 100%
+  background: color('wave')
+  padding: 20px
+  header
+    align-items: center
+    display: flex
+    justify-content: space-between
+    width: 90%
+    .left
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+
+    h2, p, i, button
+      color: color('background')
+      margin: 15px 0
+    h2
+      font-size: 2.5em
+      margin: 0 0 5px 0
+    p
+      width: 50%
+    ul
+      align-self: flex-start
+      display: flex
+      justify-content: space-around
+      width: 40%
+      i
+        color: color('primary')
+        font-size: 2em
+    .right
+      align-items: center
+      display: flex
+      button.btn-primary
+        padding: 20px 10px
+        color: color('white')
+  .bottom
+    align-items: center
+    display: flex
+    justify-content: space-around
+    margin: 70px 0 30px 0
+    width: 100%
+    ul > li
+      color: color('background')
+
+svg
+  margin-bottom: -10px
+  padding: 0
+  width: 100%
+
+@media screen and (max-width: 786px)
+  .footer
+    header .right button.btn-primary
+      padding: 15px 20px
+
+@media screen and (max-width: 567px)
+  .footer
+    header
+      align-items: center
+      display: flex
+      flex-direction: column
+      .left
+        h2, p, ul
+          align-self: center
+        p
+          width: 100%
+          text-align: center
+
+@media screen and (max-width: 368px)
+  .footer
+    width: 100%
+    .left
+      h2
+        font-size: 2em
+      ul
+        width: 100%
+    .bottom
+      flex-direction: column
+      text-align: center
+      justify-content: space-around
+      height: 70vh
+      font-size: 1.2em
