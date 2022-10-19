@@ -3,14 +3,61 @@
   display: flex
   justify-content: space-around
   padding: 20px
+  position: -webkit-sticky
+  .hamburger
+    display: none
   &-list
     align-items: center
     display: flex
     justify-content: space-between
     width: 40%
+    .item
+      .nav-phone
+        display: none
   &-phone
     border: 1px solid color('text')
     padding: 10px
     border-radius: 10px
     .fa-phone
       color: color('primary')
+
+@media screen and (max-width: 786px)
+  .nav
+    justify-content: space-between
+    padding: 20px 30px
+
+@media screen and (max-width: 567px)
+  .nav
+    position: relative
+    .hamburger
+      display: block
+      z-index: 20
+      .ri-menu-line
+        transition: all .5s ease-in-out
+        font-size: 2em
+    &-list
+      position: absolute
+      width: 80%
+      flex-direction: column
+      justify-content: space-evenly
+      height: 100vh
+      top: 0
+      right: 0
+      bottom: 0
+      background: color('wave')
+      transform: translateX(100%)
+      transition: all .5s ease-in-out
+      z-index: 10
+      .item
+        color: color('background')
+        .nav-phone
+          display: block
+          span
+            color: color('background')
+    &-phone
+      display: none
+
+.slide
+  transform: translateX(0%)
+.black
+  color: color(background)
