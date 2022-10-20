@@ -7,6 +7,7 @@ const main = () => {
   menu.addEventListener("click", () => {
     list.classList.toggle("slide");
     menu.classList.toggle("black");
+    document.body.classList.toggle("hidden");
   });
 };
 
