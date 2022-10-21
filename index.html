@@ -128,12 +128,6 @@
             <button class="btn btn-pricing-primary">Book a cleaning</button>
           </div>
         </div>
-        <form action="" class="form-group">
-          <h1>Save Up to 20% off your first cleaning!</h1>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <button type="submit" class="btn btn-primary">Get Started</button>
-        </form>
       </section>
       <section class="offer" id="offer">
         <div class="offers-container">
@@ -220,10 +214,10 @@
       <section class="report">
         <h2 class="report-heading">Report</h2>
         <form class="report-submit">
-            <input class="name" type="text" name="name" placeholder="Name"></input>
-            <input class="email" type="email" name="email" placeholder="Email"></input>
-            <textarea class="sentences" name="sentences" rows=15 cols="50"></textarea>
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <input id="name" type="text" placeholder="Name" />
+            <input id="email" type="email" placeholder="Email" />
+            <textarea id="sentences" rows=15 cols="50"></textarea>
+            <button class="btn btn-primary" id="send" type="button">Send</button> 
         </form>
       </section>
     </main>
@@ -274,6 +268,14 @@
         </ul>
       </div>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("l2XE1auQUF2SZG2JN");
+       })();
+    </script>
     <script type="module" src="src/index.js"></script>
   </body>
 </html>
