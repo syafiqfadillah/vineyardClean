@@ -1,3 +1,4 @@
+// Styling pada pricing pada tampilan desktop
 .pricing
   align-items: center
   width: 100%
@@ -6,6 +7,7 @@
   .price-paragraph
     text-align: center
     margin-bottom: 60px
+    width: 80%
   .price-card-container
     align-items: center
     display: flex
@@ -32,3 +34,21 @@
       .btn
         width: 100%
         border-radius: 0px
+        color: color('wave')
+        font-weight: 700
+        &-premium
+          background: color('wave')
+          color: color('primary')
+
+@media screen and (max-width: 768px)
+  .price-card-container
+    flex-direction: column
+    width: 80%
+    justify-content: space-around
+    .price-card
+      width: 70%
+      margin-bottom: 30px
+
+@media screen and (max-width: 567px)
+  .price-card
+    width: 80%

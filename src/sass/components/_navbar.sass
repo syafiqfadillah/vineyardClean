@@ -1,3 +1,4 @@
+// Styling navbar pada tampilan desktop
 .nav
   align-items: center
   display: flex
@@ -21,14 +22,18 @@
     .fa-phone
       color: color('primary')
 
+// Styling navbar pada tampilan tablet
 @media screen and (max-width: 786px)
   .nav
     justify-content: space-between
     padding: 20px 30px
 
+// Styling navbar pada tampilan mobile
 @media screen and (max-width: 567px)
   .nav
-    position: relative
+    .fa-home
+      z-index: 11
+      position: relative
     .hamburger
       display: block
       z-index: 20
@@ -37,7 +42,7 @@
         font-size: 2em
     &-list
       position: absolute
-      width: 80%
+      width: 100%
       flex-direction: column
       justify-content: space-evenly
       height: 100vh
@@ -58,6 +63,7 @@
     &-phone
       display: none
 
+// Kelas yang akan dijalankan jika event listener bekerja
 .slide
   transform: translateX(0%)
   opacity: 1
