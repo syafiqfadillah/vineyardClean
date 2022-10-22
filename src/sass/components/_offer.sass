@@ -1,4 +1,8 @@
 #offer
+	height: 880px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 	.offers-container
 		display: flex
 		flex-direction: row
@@ -13,9 +17,55 @@
 		.offer-details
 			#list-reasons
 				display: flex
-				flex-direction: row
 				flex-wrap: wrap
 				justify-content: space-between
 				align-items: center
 				width: 800px
 				height: 205px
+	.limited-offers
+		height: 430px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		.limited-offers-brand
+			width: 1400px
+			height: 100px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: color("primary")
+			.limited-offers-heading
+				color: color("white")
+		.offers-container
+			display: flex
+			flex-direction: column
+			align-items: center
+			.offer
+				width: 890px
+				height: 90px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				.offer-text
+					display: flex
+					flex-direction: column
+					align-content: space-between
+					h4 
+						font-size: 20px
+				.offer-price
+					display: flex
+					flex-direction: column
+					h4
+						color: color("primary")
+						display: flex
+						flex-direction: row
+						font-size: 35px
+					pre
+						font-size: 10px
+					span
+						font-size: 13px
+			.btn-primary-outline
+				width: 150px
+				height: 40px
+
