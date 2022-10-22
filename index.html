@@ -23,9 +23,9 @@
         <i class="fas fa-home"></i>
       </h1>
       <ul class="nav-list">
-        <li class="item"><a href="">Home</a></li>
-        <li class="item"><a href="">About</a></li>
-        <li class="item"><a href="">Price</a></li>
+        <li class="item"><a href="#jumbotron">Home</a></li>
+        <li class="item"><a href="#about">About</a></li>
+        <li class="item"><a href="#pricing">Price</a></li>
         <li class="item"><a href="">FAQ</a></li>
         <li class="item">
           <div class="nav-phone">
@@ -49,35 +49,35 @@
           <h2>Clean life</h2>
           <span>Spend time with your loved ones. Not with cleaning</span>
           <h4>Type of cleaning:</h4>
-          <button class="outline">Standard</button
-          ><button class="primary">Next</button>
+          <div class="btn-container">
+            <button class="btn btn-outline">Standard</button
+            ><button class="btn btn-primary">Next</button>
+          </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
           <h1 class="about-heading">About us</h1>
           <p class="about-paragraph">
-            <span class="about-primary">Clean home</span>work closely with in
+            <span class="about-primary">Clean home</span> work closely with in
             finding the most effective solutions while still finding a level of
             service that will produce a clean, healthy work envitonment as well
             as one that protects the capital insvesment you have made in your
             facility
           </p>
-          <button class="primary">Book a cleaning</button>
-          <div class="about-detail">
-            <ul>
-              <li>
-                <h4>823</h4>
-                <span>Cleanings</span>
-              </li>
-              <li>
-                <h4>20</h4>
-                <span>Teams</span>
-              </li>
-              <li>
-                <h4>14</h4>
-                <span>Years</span>
-              </li>
-            </ul>
-          </div>
+          <button class="btn btn-primary">Book a cleaning</button>
+          <ul class="detail-list">
+            <li class="list-item">
+              <h4>823</h4>
+              <span>Cleanings</span>
+            </li>
+            <li class="list-item">
+              <h4>20</h4>
+              <span>Teams</span>
+            </li>
+            <li class="list-item">
+              <h4>14</h4>
+              <span>Years</span>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="pricing" id="pricing">
@@ -101,7 +101,7 @@
             </ul>
             <button class="btn btn-primary">Book a cleaning</button>
           </div>
-          <div class="price-card">
+          <div class="price-card price-card-premium">
             <h1>Premium</h1>
             <span class="price">$ 58</span>
             <ul>
@@ -136,7 +136,8 @@
             <p>
               Now more than ever detailed diinfecting method should be in place
               to
-              <span id="protect">protect</span> the guests and employees of your facility
+              <span id="protect">protect</span> the guests and employees of your
+              facility
             </p>
           </div>
           <div class="offer-details">
@@ -214,10 +215,10 @@
       <section class="report">
         <h2 class="report-heading">Report</h2>
         <form class="report-submit">
-            <input id="name" type="text" placeholder="Name" />
-            <input id="email" type="email" placeholder="Email" />
-            <textarea id="sentences" rows=15 cols="50"></textarea>
-            <button class="btn btn-primary" id="send" type="button">Send</button> 
+          <input id="name" type="text" placeholder="Name" />
+          <input id="email" type="email" placeholder="Email" />
+          <textarea id="sentences" rows="15" cols="50"></textarea>
+          <button class="btn btn-primary" id="send" type="button">Send</button>
         </form>
       </section>
     </main>
@@ -268,13 +269,14 @@
         </ul>
       </div>
     </footer>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-       (function(){
-          emailjs.init("l2XE1auQUF2SZG2JN");
-       })();
+      (function () {
+        emailjs.init("l2XE1auQUF2SZG2JN");
+      })();
     </script>
     <script type="module" src="src/index.js"></script>
   </body>

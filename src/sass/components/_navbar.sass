@@ -5,6 +5,11 @@
   justify-content: space-around
   padding: 20px
   position: -webkit-sticky
+  .fa-home
+    cursor: pointer
+    transition: all .5s ease-in-out
+    &:hover
+      color: color('primary')
   .hamburger
     display: none
   &-list
@@ -13,6 +18,9 @@
     justify-content: space-between
     width: 40%
     .item
+      transition: all .5s ease-in-out
+      &:hover
+        color: color('primary')
       .nav-phone
         display: none
   &-phone
