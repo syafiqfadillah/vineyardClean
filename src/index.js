@@ -18,9 +18,9 @@ const main = () => {
   document.getElementById("send").addEventListener("click", (e) => {
     e.preventDefault();
     const data = {
-      service_id: "service_n2zflqr",
-      template_id: "template_j31ncdi",
-      user_id: "3_tunqhcVdZ_1745E",
+      service_id: "contact_service",
+      template_id: "contact_form",
+      user_id: "l2XE1auQUF2SZG2JN",
       template_params: {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -48,9 +48,6 @@ const main = () => {
               text: "Something went wrong!",
             });
       })
-      .catch((e) => {
-        console.error(e);
-      });
   });
 };
 
