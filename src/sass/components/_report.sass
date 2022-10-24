@@ -1,9 +1,9 @@
 .report
-  width: 1350px
+  width: 100%
   display: flex
   justify-content: center
   .report-wrapper
-    width: 600px
+    width: 40%
     height: 520px
     display: flex
     flex-direction: column
@@ -11,15 +11,14 @@
     align-items: center
     border-radius: 10px
     background-color: color("white")
-    .report-header
-      font-size: 40px
     .form-report
       .form
         display: flex
         flex-direction: column
         justify-content: center
+        align-items: center
         #name, #email, #sentences, .btn-primary
-          width: 500px
+          width: 100%
           height: 50px
         #name, #email, #sentences
           margin-bottom: 13px
@@ -27,9 +26,23 @@
           border-radius: 5px
         #name, #email, .btn-primary
           height: 50px
+        #name, #email, #sentences
+          padding: 3%
         #name, #email
-          font-size: 17px
-          padding-left: 10px
+          font-size: 1.2em
         #sentences
           height: 150px
-          padding: 10px
+
+@media screen and (max-width: 768px)
+  .report
+    .report-wrapper
+      width: 60%
+
+@media screen and (max-width: 567px)
+  .report
+    .report-wrapper
+      width: 90%
+      .form-report
+        .form
+          #name, #email, #sentences, .btn-primary
+            width: 60%
