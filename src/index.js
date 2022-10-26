@@ -34,20 +34,23 @@ const main = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    })
-      .then((res) => {
-        res.status === 200
-          ? Swal.fire({
-              icon: "success",
-              title: "Success",
-              text: "Email sent successfully",
-            })
-          : Swal.fire({
-              icon: "error",
-              title: "Oops...",
-              text: "Something went wrong!",
-            });
-      })
+    }).then((res) => {
+      res.status === 200
+        ? Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Email sent successfully",
+            color: "#ffffff",
+            title: "Oops...",
+          })
+        : Swal.fire({
+            icon: "error",
+            background: "#6042D1",
+            color: "#ffffff",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
+    });
   });
 };
 
